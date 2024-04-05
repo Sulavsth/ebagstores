@@ -1,0 +1,269 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #666;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  height: 800px;
+  background-image: url('./img/herosection.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.hero-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subheading {
+  font-size: 1.5rem;
+}
+
+/* Featured Products Styles */
+.featured-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.featured-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.featured-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-item:hover img {
+  transform: scale(1.1);
+}
+
+.price-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+/* Form Styles */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #333;
+  font-weight: bold;
+}
+
+.form-control {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #9DB2BF;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #333;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+button.btn-primary {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #27374D;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar-links a {
+    margin-left: 1rem;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.2rem;
+  }
+
+  .featured-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .featured-item img {
+    height: 250px;
+  }
+
+  .price-tag {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 1rem;
+  }
+
+  .navbar-links a {
+    margin-left: 0.5rem;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .hero-subheading {
+    font-size: 1rem;
+  }
+
+  .featured-section {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .featured-item img {
+    height: 200px;
+  }
+
+  .price-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+

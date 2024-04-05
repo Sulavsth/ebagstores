@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebag Stores</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="#" class="navbar-logo">Ebag Stores</a>
+    <div class="navbar-links">
+      <a href="#">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#Featured Products">Featured</a>
+      <a href="#Premium">Premium</a>
+
+    </div>
+  </div>
+
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-heading">Explore Our Collection Today!</h1>
+      <p class="hero-subheading">Ready to elevate your look with the perfect bag?</p>
+    </div>
+  </section>
+
+  <h1 id="Featured Products" class="Featured Products">Featured Products</h1>
+  <section class="featured-section">
+    <div class="featured-item">
+      <img src="./img/4.jpg" alt="Image 4">
+      <div class="price-tag">NPR 2500</div>
+      <button class="btn add-to-cart" data-product-id="product2">BUY NOW</button>
+    </div>
+    <div class="featured-item">
+      <img src="./img/7.jpg" alt="Image 4">
+      <div class="price-tag">NPR 2600</div>
+      <button class="btn add-to-cart" data-product-id="product2">BUY NOW</button>
+    </div>
+    <div class="featured-item">
+      <img src="./img/8.jpg" alt="Image 5">
+      <div class="price-tag">NPR 3000</div>
+      <button class="btn add-to-cart" data-product-id="product3">BUY NOW</button>
+    </div>
+    <div class="featured-item">
+      <img src="./img/9.jpg" alt="Image 6">
+      <div class="price-tag">NPR 3600</div>
+      <button class="btn add-to-cart" data-product-id="product4">BUY NOW</button>
+    </div>
+  </section>
+
+  <h1 id="Premium" class="Premium">Premium</h1>
+  <section class="featured-section">
+    <div class="featured-item">
+      <img src="./img/3.png" alt="Image 4">
+      <div class="price-tag">NPR 2500</div>
+      <button class="btn add-to-cart" data-product-id="product2">BUY NOW</button>
+    </div>
+    <div class="featured-item">
+      <img src="./img/6.jpg" alt="Image 4">
+      <div class="price-tag">NPR 3500</div>
+      <button class="btn add-to-cart" data-product-id="product2">BUY NOW</button>
+    </div>
+    <div class="featured-item">
+      <img src="./img/5.jpg" alt="Image 5">
+      <div class="price-tag">NPR 2000</div>
+      <button class="btn add-to-cart" data-product-id="product3">BUY NOW</button>
+    </div>
+    <div class="featured-item">
+      <img src="./img/2.jpeg" alt="Image 6">
+      <div class="price-tag">NPR 1500</div>
+      <button class="btn add-to-cart" data-product-id="product4">BUY NOW</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="contactForm" method="post" action="process_contact.php" onsubmit="return validateForm()">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="contactNumber">Contact Number</label>
+              <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p>&copy; 2024 Ebag Stores. All rights reserved.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/ebag_stores/" style="color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/ebag_stores/" style="color: #1da1f2;"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ebag_stores/" style="color: #0077b5;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/ebag_stores/" style="color: #bc2a8d;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/ebag_stores/" style="color: #bd081c;"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
